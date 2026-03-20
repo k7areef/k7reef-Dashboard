@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  width: 100%;
+  max-width: 80rem;
+}
+
+@theme {
+  --color-primary: #8a14de;
+  --color-dark-bg: #0e0216;
+  --color-card-bg: #1c042c;
+  --color-muted-text: #7c7c7c;
+  --color-accent-soft: #8a14de36;
+  --color-warning: #c19c00;
+  --color-warning-soft: #3f2b1a;
+  --color-success: #5ac874;
+  --color-success-soft: #1b2d2b;
+  --color-danger: #b8070f;
+}
+
+/* Root */
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Root Modal */
+#root-modal {
+  z-index: 9999 !important;
+}
+
+/* Global */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-accent-soft);
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+p {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Custom Selection */
+::selection {
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+/* Toast Style */
+.toast-style {
+  color: #fff !important;
+  border-width: 2px !important;
+  border-color: var(--color-accent-soft) !important;
+  background-color: var(--color-card-bg) !important;
+}
