@@ -10,7 +10,9 @@ function AuthLayout() {
 
     return (
         <div className="auth-layout">
-            <Outlet />
+            <main>
+                <Outlet />
+            </main>
         </div>
     )
 }
