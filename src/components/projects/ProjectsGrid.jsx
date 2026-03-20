@@ -3,13 +3,13 @@
  * @prop {Array} projects
  */
 
-import ProjectCard from "@components/Projects/ProjectCard";
 import SectionHeader from "../sections/components/SectionHeader";
 import Button from "@components/UI/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { useAddNewProjectContext } from "@contexts/AddNewProjectContext";
 import FilterSection from "@components/sections/FilterSection";
+import ProjectCard from "./ProjectCard";
 
 /**
  * @param {ProjectsProps} props
